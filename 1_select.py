@@ -57,13 +57,12 @@ if not 'all' in argv:
             D[idx] = wl[idx]
     
     Wordlist(D).output('tsv', filename='D_Chen_subset', prettify=False)
-else:
-    wl.output('tsv', filename='D_Chen_subset', prettify=False)
+    # revise columns commend
+    wl = Wordlist('D_Chen_subset.tsv')
 
-# revise columns commend
-wl = Wordlist('D_Chen_subset.tsv')
-wl.output('tsv', filename='D_Chen_subset',
-        prettify=False, ignore='all')
+else:
+    wl.output('tsv', filename='A_Chen_subset', prettify=False)
+
 print('Wordlist has {0} concepts and {1} varieties across {2} words.'.format(
       wl.height, wl.width, len(wl)))
 

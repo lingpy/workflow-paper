@@ -1,10 +1,16 @@
 from sinopy import segments
 from lingpy import *
 from lingrex.align import template_alignment
+from sys import argv
+
+if 'all' in argv:
+    fname='A_Chen_'
+else:
+    fname='D_Chen_'
 
 
 
-alms = Alignments('D_Chen_partial.tsv', ref='cogids')
+alms = Alignments(fname+'partial.tsv', ref='cogids')
 alms.add_entries(
         'structure',
         'tokens',
@@ -30,11 +36,4 @@ template_alignment(alms,
                    fuzzy=True,
                    segments='tokens')
 
-
-
-alms.output('tsv', filename='D_Chen_aligned', prettify=False)
-
-
-# print out for inspection
-#for idx, cp, tok, structure in wl.iter_rows('concept', 'tokens', 'structure'):
-#    print(wl[idx, 'doculect'], cp, tok, structure)
+alms.output('tsv', filename=fname+'aligned', prettify=False)

@@ -1,12 +1,19 @@
 from lingpy import *
 from lingpy.compare.partial import Partial
+from sys import argv
+
+if 'all' in argv:
+    fname='A_Chen_'
+else:
+    fname='D_Chen_'
 
 try:
-    part = Partial('D_Chen_partial.bin.tsv')
+    part = Partial(fname+'partial.bin.tsv')
 except:
-    part = Partial('D_Chen_subset.tsv', segments='tokens')
+    part = Partial(fname+'subset.tsv', segments='tokens')
+    print('[i] loaded the file')
     part.get_partial_scorer(runs=10000)
-    part.output('tsv', filename='D_Chen_partial.bin', ignore=[], prettify=False)
+    part.output('tsv', filename=fname+'_partial.bin', ignore=[], prettify=False)
     print('[i] saved the scorer')
 finally:
     part.partial_cluster(
@@ -18,4 +25,4 @@ finally:
             cluster_method='infomap'
             )
 
-part.output('tsv', filename='D_Chen_partial', prettify=False)
+part.output('tsv', filename=fname+'_partial', prettify=False)

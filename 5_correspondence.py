@@ -1,7 +1,13 @@
 from lingrex.copar import CoPaR
+from sys import argv
+
+if 'all' in argv:
+    fname='A_Chen_'
+else:
+    fname='D_Chen_'
 
 cop = CoPaR(
-        'D_Chen_crossids.tsv',
+        fname+'crossids.tsv',
         ref='crossids',
         fuzzy=True,
         segments='tokens'
@@ -10,8 +16,8 @@ cop.get_sites(minrefs=3, structure='structure')
 cop.cluster_sites()
 cop.sites_to_pattern()
 cop.add_patterns()
-cop.write_patterns('D_patterns_Chen.tsv')
-cop.output('tsv', filename='D_Chen_patterns', prettify=False)
+cop.write_patterns(fname+'all_patterns.tsv')
+cop.output('tsv', filename=fname+'patterns', prettify=False)
 
 # statistics 
 sps=['i','m','n','c','t']
