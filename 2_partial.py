@@ -13,7 +13,7 @@ except:
     part = Partial(fname+'subset.tsv', segments='tokens')
     print('[i] loaded the file')
     part.get_partial_scorer(runs=10000)
-    part.output('tsv', filename=fname+'_partial.bin', ignore=[], prettify=False)
+    part.output('tsv', filename=fname+'partial.bin', ignore=[], prettify=False)
     print('[i] saved the scorer')
 finally:
     part.partial_cluster(
@@ -25,4 +25,4 @@ finally:
             cluster_method='infomap'
             )
 
-part.output('tsv', filename=fname+'_partial', prettify=False)
+part.output('tsv', filename=fname+'partial', prettify=False)
