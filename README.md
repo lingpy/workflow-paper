@@ -2,10 +2,13 @@
 
 This repository stores the python scripts of the CALC-workflow manuscript and the tutorial.
 
+## Code Ocean Capsule
+
+Here is the link to the code ocean capsule : https://codeocean.com/capsule/8178287/tree/v2
+
 ## Tutorial
 
-Here finds the tutorial: https://pad.gwdg.de/ouxXcKnXTnaY7aAspf8E4w#
-(will merge with this repository and the manuscript, once it's done.)
+Please see the file tutorial.pdf
 
 ## Python codes
 
