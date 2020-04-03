@@ -8,7 +8,7 @@ Here is the link to the code ocean capsule : https://codeocean.com/capsule/81782
 
 ## Tutorial
 
-Please see the file tutorial.pdf
+Please see the Tutorial.pdf
 
 ## Python codes
 
