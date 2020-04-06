@@ -35,6 +35,10 @@ In order to facilitate it for users to quickly test our workflows without instal
 
 ## Tutorial
 
+This tutorial accompanies the study "Computer-assisted language comparison. State of the art." by Wu et al. (2020). Please cite the original paper if you refer to the tutorial in your work or make use of the code:
+
+> Wu, M.-S.; Schweikhard, N. E.; Bodt, T. A.; Hill, N. W. & List, J.-M. (forthcoming): "Computer-Assisted Language Comparison. State of the Art. *Journal of Open Humanities Data*. 
+
 In the [Tutorial.pdf] (https://github.com/lingpy/workflow-paper/blob/master/Tutorial.pdf), we detail two ways to work with our workflow, one way is to use `cldfbench` commandline directly, the instructions are also given in the [NOTEs.md in the chenhmongmien repository] (https://github.com/lexibank/chenhmongmien/blob/master/NOTES.md). The other method is to use the Python scripts we provide here. 
 
 ## Python scripts
