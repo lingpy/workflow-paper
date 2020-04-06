@@ -1,4 +1,4 @@
--e git+https://github.com/lexibank/chenhmongmien.git@6c4266bece9f80f5d513f55c411f9f9acc290df8#egg=lexibank_chenhmongmien
+-e git+https://github.com/lexibank/chenhmongmien.git@v2.0.1#egg=lexibank_chenhmongmien
 git+https://github.com/lingpy/lingrex.git@v0.1.3
 git+https://github.com/lingpy/sinopy.git@v0.3.4
 python-igraph
