@@ -1,6 +1,9 @@
 # Computer-Assisted Language Comparison: State of the Art
-We present our computer-assisted language comparison workflow which starts with raw data and lifts up to a stage where sound correspondence patterns across multiple languages have been identified and can be readily presented, inspected, and discussed.  
-  The workflow consists of 5 different stages and make use of several Python libraries that interact, one producing the data that can be used by the other. Since the data is available in different stages, each stage allows us to intervene by correcting errors manually that were made by the automated approach. Our illustration is accompanied by Python code and instructions on how to use additional web-based tools we developed so that users can apply our workflow for their own purposes.
+We present our computer-assisted language comparison workflow which starts with raw data and lifts up to a stage where sound correspondence patterns across multiple languages have been identified and can be readily presented, inspected, and discussed. Our workflow works with all the languages in general, however, we highly encourage linguists who work with Southeast Asian languages to try out this workflow. Because the workflow attempt to work with two major features of Southeast Asian langauges: 
+ * high frequency of compund words.
+ * a common template can be found in most of the morphemes. 
+ 
+The workflow consists of 5 different stages and make use of several Python libraries that interact, one producing the data that can be used by the other. Since the data is available in different stages, each stage allows us to intervene by correcting errors manually that were made by the automated approach. Our illustration is accompanied by Python code and instructions on how to use additional web-based tools we developed so that users can apply our workflow for their own purposes.
 
 The manuscript has been accepted for publication with the *Journal of Open Humanities Data*. When using the processed data or the code to process data in your research, please cite this study as:
 
