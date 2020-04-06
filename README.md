@@ -1,5 +1,5 @@
 # Computer-Assisted Language Comparison: State of the Art
-We present our computer-assisted language comparison workflow which starts with raw data and lifts up to a stage where sound correspondence patterns across multiple languages have been identified and can be readily presented, inspected, and discussed. Our workflow works with all the languages in general, however, we highly encourage linguists who work with Southeast Asian languages to try out this workflow. Because the workflow attempt to work with two major features of Southeast Asian langauges: 
+We present our computer-assisted language comparison workflow which starts with raw data and lifts up to a stage where sound correspondence patterns across multiple languages have been identified and can be readily presented, inspected, and discussed. Our workflow works with all the languages in general, however, we highly encourage linguists who work with Southeast Asian languages to try out this workflow. Because our workflow attempts to work with two major features of Southeast Asian langauges: 
  * high frequency of compund words.
  * a common template can be found in most of the morphemes. 
  
