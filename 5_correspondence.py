@@ -10,9 +10,11 @@ cop = CoPaR(
         fname+'crossids.tsv',
         ref='crossids',
         fuzzy=True,
-        segments='tokens'
+        segments='tokens',
+        minrefs=3,
+        structure="structure"
         )
-cop.get_sites(minrefs=3, structure='structure')
+cop.get_sites()
 cop.cluster_sites()
 cop.sites_to_pattern()
 cop.add_patterns()
